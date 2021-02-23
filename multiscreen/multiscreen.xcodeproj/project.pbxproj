@@ -17,6 +17,10 @@
 		C997CFDD25E3FBF4008D853F /* multiscreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C997CFDC25E3FBF4008D853F /* multiscreenTests.m */; };
 		C997CFE825E3FBF5008D853F /* multiscreenUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C997CFE725E3FBF5008D853F /* multiscreenUITests.m */; };
 		C997D00925E4080E008D853F /* FirstDoorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D00825E4080E008D853F /* FirstDoorViewController.m */; };
+		C997D00E25E57F6D008D853F /* dungeon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C997D00D25E57F6D008D853F /* dungeon.jpg */; };
+		C997D02025E58229008D853F /* dungdoor3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C997D01F25E58229008D853F /* dungdoor3.jpg */; };
+		C997D03525E5BD1B008D853F /* SecondDoorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D03425E5BD1B008D853F /* SecondDoorVC.m */; };
+		C997D03A25E5C043008D853F /* roomTwo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C997D03925E5C043008D853F /* roomTwo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,11 @@
 		C997CFE925E3FBF5008D853F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C997D00725E4080E008D853F /* FirstDoorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstDoorViewController.h; sourceTree = "<group>"; };
 		C997D00825E4080E008D853F /* FirstDoorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstDoorViewController.m; sourceTree = "<group>"; };
+		C997D00D25E57F6D008D853F /* dungeon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dungeon.jpg; path = ../../../../Downloads/dungeon.jpg; sourceTree = "<group>"; };
+		C997D01F25E58229008D853F /* dungdoor3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = dungdoor3.jpg; path = ../../../../Downloads/dungdoor3.jpg; sourceTree = "<group>"; };
+		C997D03325E5BD1B008D853F /* SecondDoorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondDoorVC.h; sourceTree = "<group>"; };
+		C997D03425E5BD1B008D853F /* SecondDoorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondDoorVC.m; sourceTree = "<group>"; };
+		C997D03925E5C043008D853F /* roomTwo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = roomTwo.jpg; path = ../../../../Downloads/roomTwo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +124,16 @@
 				C997D00825E4080E008D853F /* FirstDoorViewController.m */,
 				C997CFC625E3FBF1008D853F /* ViewController.h */,
 				C997CFC725E3FBF1008D853F /* ViewController.m */,
+				C997D00D25E57F6D008D853F /* dungeon.jpg */,
 				C997CFC925E3FBF1008D853F /* Main.storyboard */,
+				C997D03925E5C043008D853F /* roomTwo.jpg */,
+				C997D01F25E58229008D853F /* dungdoor3.jpg */,
 				C997CFCC25E3FBF4008D853F /* Assets.xcassets */,
 				C997CFCE25E3FBF4008D853F /* LaunchScreen.storyboard */,
 				C997CFD125E3FBF4008D853F /* Info.plist */,
 				C997CFD225E3FBF4008D853F /* main.m */,
+				C997D03325E5BD1B008D853F /* SecondDoorVC.h */,
+				C997D03425E5BD1B008D853F /* SecondDoorVC.m */,
 			);
 			path = multiscreen;
 			sourceTree = "<group>";
@@ -246,7 +260,10 @@
 			files = (
 				C997CFD025E3FBF4008D853F /* LaunchScreen.storyboard in Resources */,
 				C997CFCD25E3FBF4008D853F /* Assets.xcassets in Resources */,
+				C997D00E25E57F6D008D853F /* dungeon.jpg in Resources */,
+				C997D03A25E5C043008D853F /* roomTwo.jpg in Resources */,
 				C997CFCB25E3FBF1008D853F /* Main.storyboard in Resources */,
+				C997D02025E58229008D853F /* dungdoor3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +290,7 @@
 			files = (
 				C997CFC825E3FBF1008D853F /* ViewController.m in Sources */,
 				C997CFC225E3FBF1008D853F /* AppDelegate.m in Sources */,
+				C997D03525E5BD1B008D853F /* SecondDoorVC.m in Sources */,
 				C997CFD325E3FBF4008D853F /* main.m in Sources */,
 				C997D00925E4080E008D853F /* FirstDoorViewController.m in Sources */,
 				C997CFC525E3FBF1008D853F /* SceneDelegate.m in Sources */,
