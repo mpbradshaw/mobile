@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9931E8125E990F800002CBF /* FreedomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9931E8025E990F800002CBF /* FreedomVC.m */; };
+		C9931E8725E9910700002CBF /* LastPuzzleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9931E8625E9910700002CBF /* LastPuzzleVC.m */; };
+		C9931E8D25E99EF500002CBF /* FinaleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C9931E8C25E99EF500002CBF /* FinaleVC.m */; };
 		C997CFC225E3FBF1008D853F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C997CFC125E3FBF1008D853F /* AppDelegate.m */; };
 		C997CFC525E3FBF1008D853F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C997CFC425E3FBF1008D853F /* SceneDelegate.m */; };
 		C997CFC825E3FBF1008D853F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C997CFC725E3FBF1008D853F /* ViewController.m */; };
@@ -45,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9931E7F25E990F800002CBF /* FreedomVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FreedomVC.h; sourceTree = "<group>"; };
+		C9931E8025E990F800002CBF /* FreedomVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreedomVC.m; sourceTree = "<group>"; };
+		C9931E8525E9910700002CBF /* LastPuzzleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastPuzzleVC.h; sourceTree = "<group>"; };
+		C9931E8625E9910700002CBF /* LastPuzzleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastPuzzleVC.m; sourceTree = "<group>"; };
+		C9931E8B25E99EF500002CBF /* FinaleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinaleVC.h; sourceTree = "<group>"; };
+		C9931E8C25E99EF500002CBF /* FinaleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinaleVC.m; sourceTree = "<group>"; };
 		C997CFBD25E3FBF1008D853F /* multiscreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = multiscreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C997CFC025E3FBF1008D853F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C997CFC125E3FBF1008D853F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -154,6 +163,12 @@
 				C997D04E25E96DE4008D853F /* SarcasticDoorVC.m */,
 				C997D05325E971AE008D853F /* SecondRightDoorVC.h */,
 				C997D05425E971AE008D853F /* SecondRightDoorVC.m */,
+				C9931E7F25E990F800002CBF /* FreedomVC.h */,
+				C9931E8025E990F800002CBF /* FreedomVC.m */,
+				C9931E8525E9910700002CBF /* LastPuzzleVC.h */,
+				C9931E8625E9910700002CBF /* LastPuzzleVC.m */,
+				C9931E8B25E99EF500002CBF /* FinaleVC.h */,
+				C9931E8C25E99EF500002CBF /* FinaleVC.m */,
 			);
 			path = multiscreen;
 			sourceTree = "<group>";
@@ -308,7 +323,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9931E8725E9910700002CBF /* LastPuzzleVC.m in Sources */,
 				C997D04925E962A7008D853F /* ThirdDoorVC.m in Sources */,
+				C9931E8125E990F800002CBF /* FreedomVC.m in Sources */,
 				C997D04025E5C9A0008D853F /* ViewController2.m in Sources */,
 				C997D04F25E96DE5008D853F /* SarcasticDoorVC.m in Sources */,
 				C997CFC825E3FBF1008D853F /* ViewController.m in Sources */,
@@ -316,6 +333,7 @@
 				C997D05525E971AF008D853F /* SecondRightDoorVC.m in Sources */,
 				C997D03525E5BD1B008D853F /* SecondDoorVC.m in Sources */,
 				C997CFD325E3FBF4008D853F /* main.m in Sources */,
+				C9931E8D25E99EF500002CBF /* FinaleVC.m in Sources */,
 				C997D00925E4080E008D853F /* FirstDoorViewController.m in Sources */,
 				C997CFC525E3FBF1008D853F /* SceneDelegate.m in Sources */,
 			);
