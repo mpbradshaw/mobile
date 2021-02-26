@@ -23,6 +23,8 @@
 		C997D03A25E5C043008D853F /* roomTwo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C997D03925E5C043008D853F /* roomTwo.jpg */; };
 		C997D04025E5C9A0008D853F /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D03F25E5C9A0008D853F /* ViewController2.m */; };
 		C997D04925E962A7008D853F /* ThirdDoorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D04825E962A7008D853F /* ThirdDoorVC.m */; };
+		C997D04F25E96DE5008D853F /* SarcasticDoorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D04E25E96DE4008D853F /* SarcasticDoorVC.m */; };
+		C997D05525E971AF008D853F /* SecondRightDoorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D05425E971AE008D853F /* SecondRightDoorVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,10 @@
 		C997D03F25E5C9A0008D853F /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		C997D04725E962A7008D853F /* ThirdDoorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdDoorVC.h; sourceTree = "<group>"; };
 		C997D04825E962A7008D853F /* ThirdDoorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdDoorVC.m; sourceTree = "<group>"; };
+		C997D04D25E96DE4008D853F /* SarcasticDoorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SarcasticDoorVC.h; sourceTree = "<group>"; };
+		C997D04E25E96DE4008D853F /* SarcasticDoorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SarcasticDoorVC.m; sourceTree = "<group>"; };
+		C997D05325E971AE008D853F /* SecondRightDoorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondRightDoorVC.h; sourceTree = "<group>"; };
+		C997D05425E971AE008D853F /* SecondRightDoorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondRightDoorVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,10 @@
 				C997D03F25E5C9A0008D853F /* ViewController2.m */,
 				C997D04725E962A7008D853F /* ThirdDoorVC.h */,
 				C997D04825E962A7008D853F /* ThirdDoorVC.m */,
+				C997D04D25E96DE4008D853F /* SarcasticDoorVC.h */,
+				C997D04E25E96DE4008D853F /* SarcasticDoorVC.m */,
+				C997D05325E971AE008D853F /* SecondRightDoorVC.h */,
+				C997D05425E971AE008D853F /* SecondRightDoorVC.m */,
 			);
 			path = multiscreen;
 			sourceTree = "<group>";
@@ -300,8 +310,10 @@
 			files = (
 				C997D04925E962A7008D853F /* ThirdDoorVC.m in Sources */,
 				C997D04025E5C9A0008D853F /* ViewController2.m in Sources */,
+				C997D04F25E96DE5008D853F /* SarcasticDoorVC.m in Sources */,
 				C997CFC825E3FBF1008D853F /* ViewController.m in Sources */,
 				C997CFC225E3FBF1008D853F /* AppDelegate.m in Sources */,
+				C997D05525E971AF008D853F /* SecondRightDoorVC.m in Sources */,
 				C997D03525E5BD1B008D853F /* SecondDoorVC.m in Sources */,
 				C997CFD325E3FBF4008D853F /* main.m in Sources */,
 				C997D00925E4080E008D853F /* FirstDoorViewController.m in Sources */,

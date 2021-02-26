@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewController2 : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIButton *leftDoor;
+@property (nonatomic, strong) IBOutlet UIButton *rightDoor;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
