@@ -10,6 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondDoorVC : UIViewController
+@property (nonatomic, strong) IBOutlet UIButton *keyButton;
+@property (nonatomic, strong) IBOutlet UIButton *doorButton;
 
 @end
 
