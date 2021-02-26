@@ -22,6 +22,7 @@
 		C997D03525E5BD1B008D853F /* SecondDoorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D03425E5BD1B008D853F /* SecondDoorVC.m */; };
 		C997D03A25E5C043008D853F /* roomTwo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C997D03925E5C043008D853F /* roomTwo.jpg */; };
 		C997D04025E5C9A0008D853F /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D03F25E5C9A0008D853F /* ViewController2.m */; };
+		C997D04925E962A7008D853F /* ThirdDoorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C997D04825E962A7008D853F /* ThirdDoorVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		C997D03925E5C043008D853F /* roomTwo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = roomTwo.jpg; path = ../../../../Downloads/roomTwo.jpg; sourceTree = "<group>"; };
 		C997D03E25E5C9A0008D853F /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		C997D03F25E5C9A0008D853F /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		C997D04725E962A7008D853F /* ThirdDoorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdDoorVC.h; sourceTree = "<group>"; };
+		C997D04825E962A7008D853F /* ThirdDoorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdDoorVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				C997D03425E5BD1B008D853F /* SecondDoorVC.m */,
 				C997D03E25E5C9A0008D853F /* ViewController2.h */,
 				C997D03F25E5C9A0008D853F /* ViewController2.m */,
+				C997D04725E962A7008D853F /* ThirdDoorVC.h */,
+				C997D04825E962A7008D853F /* ThirdDoorVC.m */,
 			);
 			path = multiscreen;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C997D04925E962A7008D853F /* ThirdDoorVC.m in Sources */,
 				C997D04025E5C9A0008D853F /* ViewController2.m in Sources */,
 				C997CFC825E3FBF1008D853F /* ViewController.m in Sources */,
 				C997CFC225E3FBF1008D853F /* AppDelegate.m in Sources */,
