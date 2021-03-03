@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DrawingSpace : UIView
+@property (nonatomic) float touch_x, touch_y;
 
 @end
 
