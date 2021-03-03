@@ -29,12 +29,12 @@ class DrawView: UIView {
         
         UIRectFill(drect)
         
-        NSLog("DrawRect called")
+//        NSLog("DrawRect called")
     }
     
     
     @objc func update() {
-        print("DrawView Update")
+//        print("DrawView Update")
         objx = objx + dx
         objy = objy + dy
         
@@ -67,12 +67,17 @@ class DrawView: UIView {
             
 //            objx = Int(point.x)
 //            objy = Int(point.y)
-//            var distance = abs(Int(point.x) - objx) + abs(Int(point.y) - objy)
-//            if(distance < 30) {
-//                print("You killed the alien")
-//                dx = -dx
-//                dy = -dy
-//            }
+            let distance = abs(Int(point.x) - objx) + abs(Int(point.y) - objy)
+            print(distance)
+            print(objx)
+            print(objy)
+            print(point.x)
+            print(point.y)
+            if(distance < 30) {
+                print("You killed the alien")
+                dx = -dx
+                dy = -dy
+            }
         }
     }
 

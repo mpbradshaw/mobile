@@ -16,21 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBM-PC-F4L" customClass="DrawView" customModule="DrawSwift" customModuleProvider="target">
-                                <rect key="frame" x="60" y="133" width="297" height="603"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBM-PC-F4L" customClass="DrawView" customModule="DrawSwift" customModuleProvider="target">
+                                <rect key="frame" x="16" y="133" width="358" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KBM-PC-F4L" secondAttribute="bottom" constant="113" id="EG9-x5-PKW"/>
-                            <constraint firstItem="KBM-PC-F4L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="EK7-P0-Gcv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KBM-PC-F4L" secondAttribute="bottom" constant="549" id="PjF-xt-NIL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KBM-PC-F4L" secondAttribute="trailing" constant="63" id="T3p-yw-vjc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KBM-PC-F4L" secondAttribute="bottom" constant="74" id="VrN-oq-V3g"/>
-                            <constraint firstItem="KBM-PC-F4L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="zqd-eR-70f"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="drawer" destination="KBM-PC-F4L" id="0PZ-DQ-7We"/>

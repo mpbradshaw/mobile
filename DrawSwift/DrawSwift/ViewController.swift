@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     
     @objc func update() {
-        print("Update")
+//        print("Update")
         drawer.update()
     }
 
