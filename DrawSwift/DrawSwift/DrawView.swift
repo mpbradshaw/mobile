@@ -33,13 +33,14 @@ class DrawView: UIView {
     var score = 0
 
     override func draw(_ rect: CGRect) {
+
         if(interval > timeLimit || (touchedR1 && touchedR2 && touchedR3 && touchedMoving)) {
             if(!(interval > timeLimit)) {   // you beat the stage
                 score = score + 1
                 scoreboard.text = String(score)
                 dx = abs(dx) + 2
                 dy = abs(dy) + 2
-                timeLimit = timeLimit - 20
+                timeLimit = timeLimit - 35
                 print("Score: ", score)
             } else {
                 // time ran out without beating the stage
@@ -103,15 +104,17 @@ class DrawView: UIView {
 //        }
         
         if movingObjX < Int(self.bounds.minX) {
+            movingObjX = movingObjX + 20
             dx = -dx
         }
         if movingObjY < Int(self.bounds.minY) {
             dy = -dy
         }
-        if movingObjX > Int(self.bounds.maxX-50) {
+        if movingObjX > Int(self.bounds.maxX-70) {
+            movingObjX = movingObjX - 20
             dx = -dx
         }
-        if movingObjY > Int(self.bounds.maxY-50) {
+        if movingObjY > Int(self.bounds.maxY-70) {
             dy = -dy
         }
         
