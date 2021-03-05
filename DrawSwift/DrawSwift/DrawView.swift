@@ -8,8 +8,14 @@
 import UIKit
 
 class DrawView: UIView {
+    @IBOutlet var redPressed: UILabel!
+    @IBOutlet var greenPressed: UILabel!
+    @IBOutlet var yellowPressed: UILabel!
+    @IBOutlet var movingPressed: UILabel!
+    @IBOutlet var scoreboard: UILabel!
 
     var interval = 0
+    var timeLimit = 500
     var movingObjX = 0
     var movingObjY = 0
     var randX1 = 0
@@ -18,8 +24,8 @@ class DrawView: UIView {
     var randY1 = 0
     var randY2 = 0
     var randY3 = 0
-    var dx = 1
-    var dy = 1
+    var dx = 2
+    var dy = 2
     var touchedR1 = false
     var touchedR2 = false
     var touchedR3 = false
@@ -27,18 +33,26 @@ class DrawView: UIView {
     var score = 0
 
     override func draw(_ rect: CGRect) {
-        if(interval > 200 || (touchedR1 && touchedR2 && touchedR3 && touchedMoving)) {
-            if(!(interval > 200)) {
+        if(interval > timeLimit || (touchedR1 && touchedR2 && touchedR3 && touchedMoving)) {
+            if(!(interval > timeLimit)) {   // you beat the stage
                 score = score + 1
-                dx = dx + 1
-                dy = dy + 1
+                scoreboard.text = String(score)
+                dx = abs(dx) + 2
+                dy = abs(dy) + 2
+                timeLimit = timeLimit - 20
                 print("Score: ", score)
+            } else {
+                // time ran out without beating the stage
             }
             randomRect()
             interval = 0
             touchedR1 = false
             touchedR2 = false
             touchedR3 = false
+            redPressed.text = ""
+            greenPressed.text = ""
+            yellowPressed.text = ""
+            movingPressed.text = ""
             touchedMoving = false
         }
         
@@ -78,7 +92,6 @@ class DrawView: UIView {
     
     
     @objc func update() {
-//        print("DrawView Update")
         movingObjX = movingObjX + dx
         movingObjY = movingObjY + dy
         
@@ -125,32 +138,30 @@ class DrawView: UIView {
             let distanceFromR2 = abs(Int(point.x) - randX2) + abs(Int(point.y) - randY2)
             let distanceFromR3 = abs(Int(point.x) - randX3) + abs(Int(point.y) - randY3)
             
-//            print(distance)
-//            print(movingObjX)
-//            print(movingObjY)
-//            print(point.x)
-//            print(point.y)
-            
-            if(distanceFromMoving < 30) {
-                print("You killed the alien")
+            if(distanceFromMoving < 50) {
+//                print("You killed the alien")
+                movingPressed.text = "Pressed"
                 dx = -dx
                 dy = -dy
                 touchedMoving = true
             }
-            if(distanceFromR1 < 30) {
-                print("Pressed R1")
+            if(distanceFromR1 < 50) {
+//                print("Pressed R1")
+                redPressed.text = "Pressed"
                 touchedR1 = true
 //                randX1 = Int.random(in: 1 ..< 300)
 //                randY1 = Int.random(in: 1 ..< 550)
             }
-            if(distanceFromR2 < 30) {
-                print("Pressed R2")
+            if(distanceFromR2 < 50) {
+//                print("Pressed R2")
+                greenPressed.text = "Pressed"
                 touchedR2 = true
 //                randX2 = Int.random(in: 1 ..< 300)
 //                randY2 = Int.random(in: 1 ..< 550)
             }
-            if(distanceFromR3 < 30) {
-                print("Pressed R3")
+            if(distanceFromR3 < 50) {
+//                print("Pressed R3")
+                yellowPressed.text = "Pressed"
                 touchedR3 = true
 //                randX3 = Int.random(in: 1 ..< 300)
 //                randY3 = Int.random(in: 1 ..< 550)
