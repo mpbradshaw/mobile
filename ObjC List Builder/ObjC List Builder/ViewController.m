@@ -51,16 +51,6 @@ float totalPrice = 0.0;
     return [items count];
 }
 
-//- (nonnull UITableViewCell *)priceTable:(nonnull UITableView *)itemTable cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-//    UITableViewCell *cell = [[UITableViewCell alloc] init];
-//    [[cell textLabel] setText:[prices objectAtIndex:[indexPath row]]];
-//    return cell;
-//}
-//
-//- (NSInteger)priceTable:(nonnull UITableView *)itemTable numberOfRowsInSection:(NSInteger)section {
-//    return [prices count];
-//}
-
 - (IBAction)addItem:(id)sender {
     NSString *insertedItem = [itemText text];
     NSString *insertedPrice = [priceText text];
@@ -88,5 +78,21 @@ float totalPrice = 0.0;
     [priceTable reloadData];
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(tableView == itemTable) {
+        [items removeObjectAtIndex:indexPath.row];
+    } else if(tableView == priceTable) {
+        NSString *priceToRemove = [prices objectAtIndex:indexPath.row];
+        [prices removeObjectAtIndex:indexPath.row];
+        float floatPrice = [priceToRemove floatValue];
+        totalPrice = totalPrice - floatPrice;
+        NSString *newTotal = [[NSNumber numberWithFloat:totalPrice] stringValue];
+        [price setText:newTotal];
+    } else {
+        NSLog(@"Error");
+    }
+    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+    [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+}
 
 @end
