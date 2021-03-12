@@ -59,7 +59,6 @@ float totalPrice = 0.0;
     
     if([insertedPrice isEqualToString:@""]) {
         [prices addObject:@"N/A"];
-        NSLog(@"add na");
     }
     else {
         [prices addObject:insertedPrice];
@@ -67,8 +66,6 @@ float totalPrice = 0.0;
         totalPrice = totalPrice + floatPrice;
         NSString *newTotal = [[NSNumber numberWithFloat:totalPrice] stringValue];
         [price setText:newTotal];
-        NSLog(@"add the price");
-
     }
     
     [itemText setText:@""];
@@ -79,20 +76,37 @@ float totalPrice = 0.0;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if(tableView == itemTable) {
-        [items removeObjectAtIndex:indexPath.row];
-    } else if(tableView == priceTable) {
-        NSString *priceToRemove = [prices objectAtIndex:indexPath.row];
-        [prices removeObjectAtIndex:indexPath.row];
-        float floatPrice = [priceToRemove floatValue];
-        totalPrice = totalPrice - floatPrice;
-        NSString *newTotal = [[NSNumber numberWithFloat:totalPrice] stringValue];
-        [price setText:newTotal];
-    } else {
-        NSLog(@"Error");
+    [items removeObjectAtIndex:indexPath.row];
+    
+    NSString *priceToRemove = [prices objectAtIndex:indexPath.row];
+    [prices removeObjectAtIndex:indexPath.row];
+    float floatPrice = [priceToRemove floatValue];
+    NSString *newTotal = [[NSNumber numberWithFloat:totalPrice] stringValue];
+    totalPrice = totalPrice - floatPrice;
+    NSString *newTotal2 = [[NSNumber numberWithFloat:totalPrice] stringValue];
+
+    bool empty = true;
+    for(NSString *s in prices) {
+        NSLog(s);
+        if([s isEqualToString:@"N/A"] || [s isEqualToString:@"Prices"]) {
+            
+        }
+        else {
+            empty = false;
+            break;
+        }
     }
+    
+    if (empty == true) {
+        [price setText:@"0.00"];
+    } else {
+        [price setText:newTotal2];
+    }
+
     NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
-    [tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+    [itemTable deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+    [priceTable deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationAutomatic];
+
 }
 
 @end
