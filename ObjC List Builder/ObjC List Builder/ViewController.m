@@ -81,13 +81,11 @@ float totalPrice = 0.0;
     NSString *priceToRemove = [prices objectAtIndex:indexPath.row];
     [prices removeObjectAtIndex:indexPath.row];
     float floatPrice = [priceToRemove floatValue];
-    NSString *newTotal = [[NSNumber numberWithFloat:totalPrice] stringValue];
     totalPrice = totalPrice - floatPrice;
     NSString *newTotal2 = [[NSNumber numberWithFloat:totalPrice] stringValue];
 
     bool empty = true;
     for(NSString *s in prices) {
-        NSLog(s);
         if([s isEqualToString:@"N/A"] || [s isEqualToString:@"Prices"]) {
             
         }
