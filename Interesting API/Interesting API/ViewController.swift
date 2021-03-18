@@ -10,8 +10,12 @@ import MapKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet private var map: MKMapView!
+    @IBOutlet var map: MKMapView!
+    @IBOutlet var latitude: UITextField!
+    @IBOutlet var longitude: UITextField!
+    @IBOutlet var letsGo: UIButton!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
