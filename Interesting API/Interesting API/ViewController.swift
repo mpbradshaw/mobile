@@ -10,7 +10,7 @@ import MapKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var map: MKMapView!
+    @IBOutlet var mapView: MKMapView!
     @IBOutlet var latitude: UITextField!
     @IBOutlet var longitude: UITextField!
     @IBOutlet var letsGo: UIButton!
@@ -20,9 +20,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let startingPoint = CLLocation(latitude: 42.0987, longitude: -75.9180)
-        map.zoomToLocation(startingPoint)
-
-
+        mapView.zoomToLocation(startingPoint)
+    }
+    
+    @objc func moveLocation() {
+        let newLat = Float(latitude.text!)
+        let newLong = Float(longitude.text!)
+//        let newLocation = CLLocation(latitude: newLat, longitude: newLong)
+//        map.zoomToLocation(newLocation)
     }
 }
 
