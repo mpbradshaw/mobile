@@ -29,8 +29,8 @@ class ViewController: UIViewController {
     @IBAction func moveLocation(_ sender: UIButton) {
         
         // Everything defaults to the original location's Lat and/or Long if a text field is left blank
-        let newLat = Double(latitude.text!) ?? 42.0987
-        let newLong = Double(longitude.text!) ?? -75.9180
+        let newLat = Double(latitude.text!) ?? 999
+        let newLong = Double(longitude.text!) ?? 999
         
         var newLocation = CLLocation(latitude: 42.0987, longitude: -75.9180)
         
