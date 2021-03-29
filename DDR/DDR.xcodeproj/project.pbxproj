@@ -15,6 +15,10 @@
 		C9EF66B22612153F0004CA7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9EF66B02612153F0004CA7D /* LaunchScreen.storyboard */; };
 		C9EF66BD2612153F0004CA7D /* DDRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66BC2612153F0004CA7D /* DDRTests.swift */; };
 		C9EF66C82612153F0004CA7D /* DDRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66C72612153F0004CA7D /* DDRUITests.swift */; };
+		C9EF66DE261215F60004CA7D /* 53294.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF66DD261215F60004CA7D /* 53294.png */; };
+		C9EF66E3261217640004CA7D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66E2261217640004CA7D /* TitleView.swift */; };
+		C9EF66E8261218140004CA7D /* InstructionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66E7261218140004CA7D /* InstructionVC.swift */; };
+		C9EF66ED2612191A0004CA7D /* gamesample.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF66EC2612191A0004CA7D /* gamesample.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		C9EF66C32612153F0004CA7D /* DDRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EF66C72612153F0004CA7D /* DDRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDRUITests.swift; sourceTree = "<group>"; };
 		C9EF66C92612153F0004CA7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9EF66DD261215F60004CA7D /* 53294.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 53294.png; path = ../../../../Downloads/53294.png; sourceTree = "<group>"; };
+		C9EF66E2261217640004CA7D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		C9EF66E7261218140004CA7D /* InstructionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionVC.swift; sourceTree = "<group>"; };
+		C9EF66EC2612191A0004CA7D /* gamesample.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gamesample.jpeg; path = ../../../../Downloads/gamesample.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,12 @@
 			children = (
 				C9EF66A52612153B0004CA7D /* AppDelegate.swift */,
 				C9EF66A72612153B0004CA7D /* SceneDelegate.swift */,
+				C9EF66E7261218140004CA7D /* InstructionVC.swift */,
+				C9EF66E2261217640004CA7D /* TitleView.swift */,
 				C9EF66A92612153B0004CA7D /* ViewController.swift */,
 				C9EF66AB2612153B0004CA7D /* Main.storyboard */,
+				C9EF66DD261215F60004CA7D /* 53294.png */,
+				C9EF66EC2612191A0004CA7D /* gamesample.jpeg */,
 				C9EF66AE2612153F0004CA7D /* Assets.xcassets */,
 				C9EF66B02612153F0004CA7D /* LaunchScreen.storyboard */,
 				C9EF66B32612153F0004CA7D /* Info.plist */,
@@ -231,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EF66DE261215F60004CA7D /* 53294.png in Resources */,
+				C9EF66ED2612191A0004CA7D /* gamesample.jpeg in Resources */,
 				C9EF66B22612153F0004CA7D /* LaunchScreen.storyboard in Resources */,
 				C9EF66AF2612153F0004CA7D /* Assets.xcassets in Resources */,
 				C9EF66AD2612153B0004CA7D /* Main.storyboard in Resources */,
@@ -260,7 +274,9 @@
 			files = (
 				C9EF66AA2612153B0004CA7D /* ViewController.swift in Sources */,
 				C9EF66A62612153B0004CA7D /* AppDelegate.swift in Sources */,
+				C9EF66E8261218140004CA7D /* InstructionVC.swift in Sources */,
 				C9EF66A82612153B0004CA7D /* SceneDelegate.swift in Sources */,
+				C9EF66E3261217640004CA7D /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
