@@ -25,6 +25,10 @@
 		C9EF67042614F70C0004CA7D /* absolute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EF67032614F70C0004CA7D /* absolute.mp3 */; };
 		C9EF67092614F8BB0004CA7D /* MediumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF67082614F8BB0004CA7D /* MediumVC.swift */; };
 		C9EF670E2614F9470004CA7D /* stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EF670D2614F9470004CA7D /* stars.mp3 */; };
+		C9EF671326150E990004CA7D /* legend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EF671226150E980004CA7D /* legend.mp3 */; };
+		C9EF671826150ECD0004CA7D /* HardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF671726150ECD0004CA7D /* HardVC.swift */; };
+		C9EF671D26150FF70004CA7D /* controller.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF671C26150FF70004CA7D /* controller.png */; };
+		C9EF672D2615130F0004CA7D /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF672C2615130F0004CA7D /* arrows.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		C9EF67032614F70C0004CA7D /* absolute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = absolute.mp3; path = ../../../../Downloads/absolute.mp3; sourceTree = "<group>"; };
 		C9EF67082614F8BB0004CA7D /* MediumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumVC.swift; sourceTree = "<group>"; };
 		C9EF670D2614F9470004CA7D /* stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stars.mp3; path = ../../../../Downloads/stars.mp3; sourceTree = "<group>"; };
+		C9EF671226150E980004CA7D /* legend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = legend.mp3; path = ../../../../Downloads/legend.mp3; sourceTree = "<group>"; };
+		C9EF671726150ECD0004CA7D /* HardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardVC.swift; sourceTree = "<group>"; };
+		C9EF671C26150FF70004CA7D /* controller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = controller.png; path = ../../../../Downloads/controller.png; sourceTree = "<group>"; };
+		C9EF672C2615130F0004CA7D /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrows.png; path = ../../../../Desktop/arrows.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +135,14 @@
 				C9EF66A92612153B0004CA7D /* ViewController.swift */,
 				C9EF66AB2612153B0004CA7D /* Main.storyboard */,
 				C9EF67082614F8BB0004CA7D /* MediumVC.swift */,
+				C9EF671726150ECD0004CA7D /* HardVC.swift */,
 				C9EF66F42614E9350004CA7D /* DifficultyVC.swift */,
 				C9EF67032614F70C0004CA7D /* absolute.mp3 */,
+				C9EF672C2615130F0004CA7D /* arrows.png */,
 				C9EF670D2614F9470004CA7D /* stars.mp3 */,
+				C9EF671226150E980004CA7D /* legend.mp3 */,
 				C9EF66DD261215F60004CA7D /* 53294.png */,
+				C9EF671C26150FF70004CA7D /* controller.png */,
 				C9EF66F92614EA200004CA7D /* difficulties.jpg */,
 				C9EF66EC2612191A0004CA7D /* gamesample.jpeg */,
 				C9EF66AE2612153F0004CA7D /* Assets.xcassets */,
@@ -262,13 +274,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9EF66DE261215F60004CA7D /* 53294.png in Resources */,
+				C9EF671326150E990004CA7D /* legend.mp3 in Resources */,
 				C9EF66ED2612191A0004CA7D /* gamesample.jpeg in Resources */,
 				C9EF66B22612153F0004CA7D /* LaunchScreen.storyboard in Resources */,
 				C9EF66AF2612153F0004CA7D /* Assets.xcassets in Resources */,
 				C9EF670E2614F9470004CA7D /* stars.mp3 in Resources */,
 				C9EF67042614F70C0004CA7D /* absolute.mp3 in Resources */,
+				C9EF671D26150FF70004CA7D /* controller.png in Resources */,
 				C9EF66FA2614EA200004CA7D /* difficulties.jpg in Resources */,
 				C9EF66AD2612153B0004CA7D /* Main.storyboard in Resources */,
+				C9EF672D2615130F0004CA7D /* arrows.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +310,7 @@
 			files = (
 				C9EF66FF2614F2A90004CA7D /* EasyVC.swift in Sources */,
 				C9EF66AA2612153B0004CA7D /* ViewController.swift in Sources */,
+				C9EF671826150ECD0004CA7D /* HardVC.swift in Sources */,
 				C9EF66F52614E9350004CA7D /* DifficultyVC.swift in Sources */,
 				C9EF67092614F8BB0004CA7D /* MediumVC.swift in Sources */,
 				C9EF66A62612153B0004CA7D /* AppDelegate.swift in Sources */,
