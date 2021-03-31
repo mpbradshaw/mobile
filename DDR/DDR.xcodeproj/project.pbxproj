@@ -19,6 +19,12 @@
 		C9EF66E3261217640004CA7D /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66E2261217640004CA7D /* TitleView.swift */; };
 		C9EF66E8261218140004CA7D /* InstructionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66E7261218140004CA7D /* InstructionVC.swift */; };
 		C9EF66ED2612191A0004CA7D /* gamesample.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF66EC2612191A0004CA7D /* gamesample.jpeg */; };
+		C9EF66F52614E9350004CA7D /* DifficultyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66F42614E9350004CA7D /* DifficultyVC.swift */; };
+		C9EF66FA2614EA200004CA7D /* difficulties.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF66F92614EA200004CA7D /* difficulties.jpg */; };
+		C9EF66FF2614F2A90004CA7D /* EasyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66FE2614F2A90004CA7D /* EasyVC.swift */; };
+		C9EF67042614F70C0004CA7D /* absolute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EF67032614F70C0004CA7D /* absolute.mp3 */; };
+		C9EF67092614F8BB0004CA7D /* MediumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF67082614F8BB0004CA7D /* MediumVC.swift */; };
+		C9EF670E2614F9470004CA7D /* stars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9EF670D2614F9470004CA7D /* stars.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		C9EF66E2261217640004CA7D /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		C9EF66E7261218140004CA7D /* InstructionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionVC.swift; sourceTree = "<group>"; };
 		C9EF66EC2612191A0004CA7D /* gamesample.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gamesample.jpeg; path = ../../../../Downloads/gamesample.jpeg; sourceTree = "<group>"; };
+		C9EF66F42614E9350004CA7D /* DifficultyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyVC.swift; sourceTree = "<group>"; };
+		C9EF66F92614EA200004CA7D /* difficulties.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = difficulties.jpg; path = ../../../../Downloads/difficulties.jpg; sourceTree = "<group>"; };
+		C9EF66FE2614F2A90004CA7D /* EasyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyVC.swift; sourceTree = "<group>"; };
+		C9EF67032614F70C0004CA7D /* absolute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = absolute.mp3; path = ../../../../Downloads/absolute.mp3; sourceTree = "<group>"; };
+		C9EF67082614F8BB0004CA7D /* MediumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumVC.swift; sourceTree = "<group>"; };
+		C9EF670D2614F9470004CA7D /* stars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stars.mp3; path = ../../../../Downloads/stars.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +123,15 @@
 				C9EF66A72612153B0004CA7D /* SceneDelegate.swift */,
 				C9EF66E7261218140004CA7D /* InstructionVC.swift */,
 				C9EF66E2261217640004CA7D /* TitleView.swift */,
+				C9EF66FE2614F2A90004CA7D /* EasyVC.swift */,
 				C9EF66A92612153B0004CA7D /* ViewController.swift */,
 				C9EF66AB2612153B0004CA7D /* Main.storyboard */,
+				C9EF67082614F8BB0004CA7D /* MediumVC.swift */,
+				C9EF66F42614E9350004CA7D /* DifficultyVC.swift */,
+				C9EF67032614F70C0004CA7D /* absolute.mp3 */,
+				C9EF670D2614F9470004CA7D /* stars.mp3 */,
 				C9EF66DD261215F60004CA7D /* 53294.png */,
+				C9EF66F92614EA200004CA7D /* difficulties.jpg */,
 				C9EF66EC2612191A0004CA7D /* gamesample.jpeg */,
 				C9EF66AE2612153F0004CA7D /* Assets.xcassets */,
 				C9EF66B02612153F0004CA7D /* LaunchScreen.storyboard */,
@@ -247,6 +265,9 @@
 				C9EF66ED2612191A0004CA7D /* gamesample.jpeg in Resources */,
 				C9EF66B22612153F0004CA7D /* LaunchScreen.storyboard in Resources */,
 				C9EF66AF2612153F0004CA7D /* Assets.xcassets in Resources */,
+				C9EF670E2614F9470004CA7D /* stars.mp3 in Resources */,
+				C9EF67042614F70C0004CA7D /* absolute.mp3 in Resources */,
+				C9EF66FA2614EA200004CA7D /* difficulties.jpg in Resources */,
 				C9EF66AD2612153B0004CA7D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +293,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EF66FF2614F2A90004CA7D /* EasyVC.swift in Sources */,
 				C9EF66AA2612153B0004CA7D /* ViewController.swift in Sources */,
+				C9EF66F52614E9350004CA7D /* DifficultyVC.swift in Sources */,
+				C9EF67092614F8BB0004CA7D /* MediumVC.swift in Sources */,
 				C9EF66A62612153B0004CA7D /* AppDelegate.swift in Sources */,
 				C9EF66E8261218140004CA7D /* InstructionVC.swift in Sources */,
 				C9EF66A82612153B0004CA7D /* SceneDelegate.swift in Sources */,

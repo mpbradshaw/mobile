@@ -1,22 +1,23 @@
 //
-//  TitleView.swift
+//  DifficultyVC.swift
 //  DDR
 //
-//  Created by Matt Bradshaw on 3/29/21.
+//  Created by Matt Bradshaw on 3/31/21.
 //
 
-import AVFoundation
 import UIKit
 
-class TitleView: UIViewController {
-    @IBOutlet var instructions: UIButton!
-    @IBOutlet var letsPlay: UIButton!
+class DifficultyVC: UIViewController {
     
+    @IBOutlet var light: UIButton!
+    @IBOutlet var standard: UIButton!
+    @IBOutlet var heavy: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
 
+        // Do any additional setup after loading the view.
+    }
     
 
     /*
