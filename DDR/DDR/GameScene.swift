@@ -18,14 +18,14 @@ class GameScene: SKScene {
     var upArrow: SKSpriteNode!
     var downArrow: SKSpriteNode!
     var score: Float!
-    var leftGens: Int!
-    var leftClicks: Int!
-    var downGens: Int!
-    var downClicks: Int!
-    var upGens: Int!
-    var upClicks: Int!
-    var rightGens: Int!
-    var rightClicks: Int!
+    var leftGen: Bool!
+    var leftClick: Bool!
+    var downGen: Bool!
+    var downClick: Bool!
+    var upGen: Bool!
+    var upClick: Bool!
+    var rightGen: Bool!
+    var rightClick: Bool!
     
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.white
@@ -79,6 +79,8 @@ class GameScene: SKScene {
     }
     
     func makeLeft() {
+        leftClick = false
+        leftGen = true
         leftArrow = SKSpriteNode(imageNamed: "leftArrow")
         leftArrow.setScale(0.4)
         let xVal = 50.0
@@ -152,23 +154,60 @@ class GameScene: SKScene {
                 var coords = CGPoint(x:0, y:0)
                 do {
                     coords = leftArrow.position
-                    if(coords.y > 0 && score != nil && leftClicks < leftGens) {
+                    if(coords.y > 0 && score != nil && leftClick == false && leftGen == true) {
+                        leftClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
                         score = score + Float((100 - timing))
+                        leftGen = false
+                        print(score!)
                     }
                 }
                 catch { }
-                
-                print(score!)
             }
             if touchedNode.name == "rightControl" {
                 print("right")
+                var coords = CGPoint(x:0, y:0)
+                do {
+                    coords = rightArrow.position
+                    if(coords.y > 0 && score != nil && rightClick == false && rightGen == true) {
+                        rightClick = true    // makes it so you can only click once per left arrow
+                        let timing = abs(coords.y - 804.0)
+                        score = score + Float((100 - timing))
+                        rightGen = false
+                        print(score!)
+                    }
+                }
+                catch { }
             }
             if touchedNode.name == "upControl" {
                 print("up")
+                var coords = CGPoint(x:0, y:0)
+                do {
+                    coords = upArrow.position
+                    if(coords.y > 0 && score != nil && upClick == false && upGen == true) {
+                        upClick = true    // makes it so you can only click once per left arrow
+                        let timing = abs(coords.y - 804.0)
+                        score = score + Float((100 - timing))
+                        upGen = false
+                        print(score!)
+                    }
+                }
+                catch { }
             }
             if touchedNode.name == "downControl" {
                 print("down")
+                var coords = CGPoint(x:0, y:0)
+                do {
+                    coords = downArrow.position
+                    if(coords.y > 0 && score != nil && downClick == false && downGen == true) {
+                        downClick = true    // makes it so you can only click once per left arrow
+                        let timing = abs(coords.y - 804.0)
+                        score = score + Float((100 - timing))
+                        downGen = false
+                        print(score!)
+                    }
+                }
+                catch { }
             }
         }
     }
