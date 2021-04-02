@@ -8,13 +8,34 @@
 import SpriteKit
  
 class GameScene: SKScene {
+    var topRack: SKSpriteNode!
     var leftControl: SKSpriteNode!
     var downControl: SKSpriteNode!
     var upControl: SKSpriteNode!
     var rightControl: SKSpriteNode!
+    var leftArrow: SKSpriteNode!
+    var rightArrow: SKSpriteNode!
+    var upArrow: SKSpriteNode!
+    var downArrow: SKSpriteNode!
+    var score: Float!
+    var leftGens: Int!
+    var leftClicks: Int!
+    var downGens: Int!
+    var downClicks: Int!
+    var upGens: Int!
+    var upClicks: Int!
+    var rightGens: Int!
+    var rightClicks: Int!
     
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.white
+        
+        score = 0.0
+        
+        topRack = SKSpriteNode(imageNamed: "arrows")
+        topRack.setScale(0.73)
+        topRack.position = CGPoint(x: 195.0, y: 800.0)
+        addChild(topRack)
         
         leftControl = SKSpriteNode(imageNamed: "upControl.jpg")
         leftControl.name = "leftControl"
@@ -40,80 +61,85 @@ class GameScene: SKScene {
         addChild(downControl)
         addChild(upControl)
         addChild(rightControl)
+        
+//        makeLeft()
+//        makeDown()
+//        makeUp()
+//        makeRight()
 
         run(SKAction.repeatForever(
               SKAction.sequence([
-//                SKAction.run(makeLeft),
+                SKAction.run(makeLeft),
 //                SKAction.run(makeDown),
 //                SKAction.run(makeUp),
-                SKAction.run(makeRight),
-                SKAction.wait(forDuration: 2.0)
+//                SKAction.run(makeRight),
+                SKAction.wait(forDuration: 5.0)
                 ])
             ))
     }
     
     func makeLeft() {
-        let arrow = SKSpriteNode(imageNamed: "leftArrow")
-        arrow.setScale(0.4)
+        leftArrow = SKSpriteNode(imageNamed: "leftArrow")
+        leftArrow.setScale(0.4)
         let xVal = 50.0
 
-        arrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
+        leftArrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
       
-        addChild(arrow)
+        addChild(leftArrow)
       
         let speed = CGFloat(4.0)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
-        arrow.run(SKAction.sequence([actionMove, actionMoveDone]))
+        leftArrow.run(SKAction.sequence([actionMove, actionMoveDone]))
     }
     
     func makeRight() {
-        let arrow = SKSpriteNode(imageNamed: "rightArrow.jpg")
-        arrow.setScale(0.6)
+        rightArrow = SKSpriteNode(imageNamed: "rightArrow.jpg")
+        rightArrow.setScale(0.6)
         let xVal = 340.0
 
-        arrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
+        rightArrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
       
-        addChild(arrow)
+        addChild(rightArrow)
       
         let speed = CGFloat(4.0)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
-        arrow.run(SKAction.sequence([actionMove, actionMoveDone]))
+        rightArrow.run(SKAction.sequence([actionMove, actionMoveDone]))
     }
     
     func makeUp() {
-        let arrow = SKSpriteNode(imageNamed: "upArrow.jpg")
-        arrow.setScale(0.1)
+        upArrow = SKSpriteNode(imageNamed: "upArrow.jpg")
+        upArrow.setScale(0.1)
         let xVal = 246.0
 
-        arrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
+        upArrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
       
-        addChild(arrow)
+        addChild(upArrow)
       
         let speed = CGFloat(4.0)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
-        arrow.run(SKAction.sequence([actionMove, actionMoveDone]))
+        upArrow.run(SKAction.sequence([actionMove, actionMoveDone]))
     }
     
     func makeDown() {
-        let arrow = SKSpriteNode(imageNamed: "downArrow.jpg")
-        arrow.setScale(0.1)
+        downArrow = SKSpriteNode(imageNamed: "downArrow.jpg")
+        downArrow.setScale(0.1)
         let xVal = 150.0
 
-        arrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
+        downArrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
       
-        addChild(arrow)
+        addChild(downArrow)
       
         let speed = CGFloat(4.0)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
-        arrow.run(SKAction.sequence([actionMove, actionMoveDone]))
+        downArrow.run(SKAction.sequence([actionMove, actionMoveDone]))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -123,6 +149,17 @@ class GameScene: SKScene {
 
             if touchedNode.name == "leftControl" {
                 print("left")
+                var coords = CGPoint(x:0, y:0)
+                do {
+                    coords = leftArrow.position
+                    if(coords.y > 0 && score != nil) {
+                        let timing = abs(coords.y - 804.0)
+                        score = score + Float((100 - timing))
+                    }
+                }
+                catch { }
+                
+                print(score!)
             }
             if touchedNode.name == "rightControl" {
                 print("right")

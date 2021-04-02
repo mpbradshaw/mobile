@@ -220,12 +220,6 @@
                     <view key="view" contentMode="scaleToFill" id="9ME-Iy-vOt" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrows.png" translatesAutoresizingMaskIntoConstraints="NO" id="woa-rH-GVj">
-                                <rect key="frame" x="8" y="-23" width="374" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RKx-Y8-ugG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
