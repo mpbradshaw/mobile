@@ -152,7 +152,7 @@ class GameScene: SKScene {
                 var coords = CGPoint(x:0, y:0)
                 do {
                     coords = leftArrow.position
-                    if(coords.y > 0 && score != nil) {
+                    if(coords.y > 0 && score != nil && leftClicks < leftGens) {
                         let timing = abs(coords.y - 804.0)
                         score = score + Float((100 - timing))
                     }
