@@ -17,17 +17,21 @@ class GameScene: SKScene {
         backgroundColor = SKColor.white
         
         leftControl = SKSpriteNode(imageNamed: "upControl.jpg")
+        leftControl.name = "leftControl"
         leftControl.zRotation = .pi / 2
         leftControl.setScale(0.07)
         leftControl.position = CGPoint(x: 80.0, y: 200.0)
         downControl = SKSpriteNode(imageNamed: "upControl.jpg")
+        downControl.name = "downControl"
         downControl.zRotation = .pi
         downControl.setScale(0.07)
         downControl.position = CGPoint(x: 195.0, y: 85.0)
         upControl = SKSpriteNode(imageNamed: "upControl.jpg")
+        upControl.name = "upControl"
         upControl.setScale(0.07)
         upControl.position = CGPoint(x: 195.0, y: 315.0)
         rightControl = SKSpriteNode(imageNamed: "upControl.jpg")
+        rightControl.name = "rightControl"
         rightControl.zRotation = -(.pi / 2)
         rightControl.setScale(0.07)
         rightControl.position = CGPoint(x: Double(size.width)-80.0, y: 200.0)
@@ -41,7 +45,7 @@ class GameScene: SKScene {
               SKAction.sequence([
 //                SKAction.run(makeLeft),
 //                SKAction.run(makeDown),
-                SKAction.run(makeUp),
+//                SKAction.run(makeUp),
                 SKAction.run(makeRight),
                 SKAction.wait(forDuration: 2.0)
                 ])
@@ -116,17 +120,18 @@ class GameScene: SKScene {
         for touch in touches {
             let location = touch.location(in: self)
             let touchedNode = atPoint(location)
-            if touchedNode.name == "LeftButton" {
-                // Call the function here.
+
+            if touchedNode.name == "leftControl" {
+                print("left")
             }
-            if touchedNode.name == "RightButton" {
-                // Call the function here.
+            if touchedNode.name == "rightControl" {
+                print("right")
             }
-            if touchedNode.name == "UpButton" {
-                // Call the function here.
+            if touchedNode.name == "upControl" {
+                print("up")
             }
-            if touchedNode.name == "DownButton" {
-                // Call the function here.
+            if touchedNode.name == "downControl" {
+                print("down")
             }
         }
     }
