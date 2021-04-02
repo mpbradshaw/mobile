@@ -61,22 +61,25 @@ class GameScene: SKScene {
         addChild(downControl)
         addChild(upControl)
         addChild(rightControl)
-        
-//        makeLeft()
-//        makeDown()
-//        makeUp()
-//        makeRight()
 
-        run(SKAction.repeatForever(
-              SKAction.sequence([
-                SKAction.run(makeLeft),
-//                SKAction.run(makeDown),
-//                SKAction.run(makeUp),
-//                SKAction.run(makeRight),
-                SKAction.wait(forDuration: 5.0)
-                ])
-            ))
+        run(SKAction.repeat(SKAction.sequence([
+                                                SKAction.wait(forDuration: 2.0), SKAction.run({
+                                                    let arrow = Int.random(in:0...3)
+                                                    if (arrow == 0) {
+                                                        self.makeLeft()
+                                                    } else if (arrow == 1) {
+                                                        self.makeDown()
+                                                    } else if (arrow == 2) {
+                                                        self.makeUp()
+                                                    } else if (arrow == 3) {
+                                                        self.makeRight()
+                                                    } else {
+
+                                                    }
+                                                })]), count: 50))
+
     }
+    
     
     func makeLeft() {
         leftClick = false
@@ -97,6 +100,8 @@ class GameScene: SKScene {
     }
     
     func makeRight() {
+        rightClick = false
+        rightGen = true
         rightArrow = SKSpriteNode(imageNamed: "rightArrow.jpg")
         rightArrow.setScale(0.6)
         let xVal = 340.0
@@ -113,6 +118,8 @@ class GameScene: SKScene {
     }
     
     func makeUp() {
+        upClick = false
+        upGen = true
         upArrow = SKSpriteNode(imageNamed: "upArrow.jpg")
         upArrow.setScale(0.1)
         let xVal = 246.0
@@ -129,6 +136,8 @@ class GameScene: SKScene {
     }
     
     func makeDown() {
+        downClick = false
+        downGen = true
         downArrow = SKSpriteNode(imageNamed: "downArrow.jpg")
         downArrow.setScale(0.1)
         let xVal = 150.0
@@ -153,7 +162,9 @@ class GameScene: SKScene {
                 print("left")
                 var coords = CGPoint(x:0, y:0)
                 do {
-                    coords = leftArrow.position
+                    if(leftArrow != nil) {
+                        coords = leftArrow.position
+                    }
                     if(coords.y > 0 && score != nil && leftClick == false && leftGen == true) {
                         leftClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
@@ -168,7 +179,9 @@ class GameScene: SKScene {
                 print("right")
                 var coords = CGPoint(x:0, y:0)
                 do {
-                    coords = rightArrow.position
+                    if(rightArrow != nil) {
+                        coords = rightArrow.position
+                    }
                     if(coords.y > 0 && score != nil && rightClick == false && rightGen == true) {
                         rightClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
@@ -183,7 +196,9 @@ class GameScene: SKScene {
                 print("up")
                 var coords = CGPoint(x:0, y:0)
                 do {
-                    coords = upArrow.position
+                    if(upArrow != nil) {
+                        coords = upArrow.position
+                    }
                     if(coords.y > 0 && score != nil && upClick == false && upGen == true) {
                         upClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
@@ -198,7 +213,9 @@ class GameScene: SKScene {
                 print("down")
                 var coords = CGPoint(x:0, y:0)
                 do {
-                    coords = downArrow.position
+                    if(downArrow != nil) {
+                        coords = downArrow.position
+                    }
                     if(coords.y > 0 && score != nil && downClick == false && downGen == true) {
                         downClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
