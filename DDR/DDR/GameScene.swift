@@ -61,23 +61,26 @@ class GameScene: SKScene {
         addChild(downControl)
         addChild(upControl)
         addChild(rightControl)
+        
+        run(SKAction.repeatForever(SKAction.sequence([SKAction.wait(forDuration:3.0), SKAction.run(makeLeft)])))
 
-        run(SKAction.repeat(SKAction.sequence([
-                                                SKAction.wait(forDuration: 2.0), SKAction.run({
-                                                    let arrow = Int.random(in:0...3)
-                                                    if (arrow == 0) {
-                                                        self.makeLeft()
-                                                    } else if (arrow == 1) {
-                                                        self.makeDown()
-                                                    } else if (arrow == 2) {
-                                                        self.makeUp()
-                                                    } else if (arrow == 3) {
-                                                        self.makeRight()
-                                                    } else {
-
-                                                    }
-                                                })]), count: 50))
-
+//        run(SKAction.repeat(SKAction.sequence([
+//                                                SKAction.wait(forDuration: 2.5), SKAction.run({
+//                                                    let arrow = Int.random(in:0...3)
+//                                                    if (arrow == 0) {
+//                                                        self.makeLeft()
+//                                                    } else if (arrow == 1) {
+//                                                        self.makeDown()
+//                                                    } else if (arrow == 2) {
+//                                                        self.makeUp()
+//                                                    } else if (arrow == 3) {
+//                                                        self.makeRight()
+//                                                    } else {
+//
+//                                                    }
+//                                                })]), count: 48)
+//                              )
+        
     }
     
     
@@ -88,11 +91,11 @@ class GameScene: SKScene {
         leftArrow.setScale(0.4)
         let xVal = 50.0
 
-        leftArrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
+        leftArrow.position = CGPoint(x: xVal, y: 0.0)
       
         addChild(leftArrow)
       
-        let speed = CGFloat(4.0)
+        let speed = CGFloat(2.5)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
@@ -164,6 +167,7 @@ class GameScene: SKScene {
                 do {
                     if(leftArrow != nil) {
                         coords = leftArrow.position
+                        print(coords)
                     }
                     if(coords.y > 0 && score != nil && leftClick == false && leftGen == true) {
                         leftClick = true    // makes it so you can only click once per left arrow
@@ -181,6 +185,7 @@ class GameScene: SKScene {
                 do {
                     if(rightArrow != nil) {
                         coords = rightArrow.position
+                        print(coords)
                     }
                     if(coords.y > 0 && score != nil && rightClick == false && rightGen == true) {
                         rightClick = true    // makes it so you can only click once per left arrow
@@ -198,6 +203,7 @@ class GameScene: SKScene {
                 do {
                     if(upArrow != nil) {
                         coords = upArrow.position
+                        print(coords)
                     }
                     if(coords.y > 0 && score != nil && upClick == false && upGen == true) {
                         upClick = true    // makes it so you can only click once per left arrow
@@ -215,6 +221,7 @@ class GameScene: SKScene {
                 do {
                     if(downArrow != nil) {
                         coords = downArrow.position
+                        print(coords)
                     }
                     if(coords.y > 0 && score != nil && downClick == false && downGen == true) {
                         downClick = true    // makes it so you can only click once per left arrow
