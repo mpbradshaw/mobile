@@ -202,6 +202,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="q1v-cN-W1A"/>
+                    <connections>
+                        <outlet property="down" destination="bqL-bm-9ar" id="1Dl-Wb-3Qt"/>
+                        <outlet property="left" destination="PZ8-gf-Xr2" id="ok6-3L-Uur"/>
+                        <outlet property="right" destination="7B0-Tx-Q7q" id="w1m-Df-VMY"/>
+                        <outlet property="up" destination="PcH-sJ-Bad" id="gED-qo-Ivg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0T3-ca-34Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -248,6 +254,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="GWL-Sg-Ady"/>
+                    <connections>
+                        <outlet property="down" destination="QIn-Wm-nEG" id="YMm-cy-uNW"/>
+                        <outlet property="left" destination="A8z-7O-HjR" id="fKu-P7-nIC"/>
+                        <outlet property="right" destination="BlT-6p-LPq" id="cGI-M6-GcQ"/>
+                        <outlet property="up" destination="78e-Hn-tHE" id="aZe-5F-mug"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Dd-aA-Jhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -337,6 +349,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Sv-ap-zHk"/>
+                    <connections>
+                        <outlet property="down" destination="3sg-oh-qLW" id="YSU-dk-MT4"/>
+                        <outlet property="left" destination="Yu8-Mh-e4D" id="2nh-Hy-P8K"/>
+                        <outlet property="right" destination="2kg-vh-PfS" id="HRI-X2-pTg"/>
+                        <outlet property="up" destination="X49-Uf-xTG" id="HHi-qS-lWJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjg-Qa-mqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
