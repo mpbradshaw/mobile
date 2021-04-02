@@ -34,6 +34,7 @@
 		C9EF673C2617719B0004CA7D /* rightArrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF673B2617719B0004CA7D /* rightArrow.jpg */; };
 		C9EF6741261771E50004CA7D /* upArrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF6740261771E50004CA7D /* upArrow.jpg */; };
 		C9EF6746261772170004CA7D /* downArrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF6745261772170004CA7D /* downArrow.jpg */; };
+		C9EF674B261778AB0004CA7D /* upControl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF674A261778AB0004CA7D /* upControl.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		C9EF673B2617719B0004CA7D /* rightArrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rightArrow.jpg; path = ../../../../Downloads/rightArrow.jpg; sourceTree = "<group>"; };
 		C9EF6740261771E50004CA7D /* upArrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = upArrow.jpg; path = ../../../../Downloads/upArrow.jpg; sourceTree = "<group>"; };
 		C9EF6745261772170004CA7D /* downArrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = downArrow.jpg; path = ../../../../Downloads/downArrow.jpg; sourceTree = "<group>"; };
+		C9EF674A261778AB0004CA7D /* upControl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = upControl.jpg; path = ../../../../Downloads/upControl.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				C9EF67032614F70C0004CA7D /* absolute.mp3 */,
 				C9EF672C2615130F0004CA7D /* arrows.png */,
 				C9EF673B2617719B0004CA7D /* rightArrow.jpg */,
+				C9EF674A261778AB0004CA7D /* upControl.jpg */,
 				C9EF6736261761C90004CA7D /* leftArrow.png */,
 				C9EF6745261772170004CA7D /* downArrow.jpg */,
 				C9EF670D2614F9470004CA7D /* stars.mp3 */,
@@ -290,6 +293,7 @@
 			files = (
 				C9EF66DE261215F60004CA7D /* 53294.png in Resources */,
 				C9EF671326150E990004CA7D /* legend.mp3 in Resources */,
+				C9EF674B261778AB0004CA7D /* upControl.jpg in Resources */,
 				C9EF6737261761CA0004CA7D /* leftArrow.png in Resources */,
 				C9EF6746261772170004CA7D /* downArrow.jpg in Resources */,
 				C9EF66ED2612191A0004CA7D /* gamesample.jpeg in Resources */,

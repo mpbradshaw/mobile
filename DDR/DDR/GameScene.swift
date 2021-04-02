@@ -8,13 +8,35 @@
 import SpriteKit
  
 class GameScene: SKScene {
-      
+    var leftControl: SKSpriteNode!
+    var downControl: SKSpriteNode!
+    var upControl: SKSpriteNode!
+    var rightControl: SKSpriteNode!
+    
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.white
-//        makeLeft()
-//        makeDown()
-//        makeUp()
-//        makeRight()
+        
+        leftControl = SKSpriteNode(imageNamed: "upControl.jpg")
+        leftControl.zRotation = .pi / 2
+        leftControl.setScale(0.07)
+        leftControl.position = CGPoint(x: 80.0, y: 200.0)
+        downControl = SKSpriteNode(imageNamed: "upControl.jpg")
+        downControl.zRotation = .pi
+        downControl.setScale(0.07)
+        downControl.position = CGPoint(x: 195.0, y: 85.0)
+        upControl = SKSpriteNode(imageNamed: "upControl.jpg")
+        upControl.setScale(0.07)
+        upControl.position = CGPoint(x: 195.0, y: 315.0)
+        rightControl = SKSpriteNode(imageNamed: "upControl.jpg")
+        rightControl.zRotation = -(.pi / 2)
+        rightControl.setScale(0.07)
+        rightControl.position = CGPoint(x: Double(size.width)-80.0, y: 200.0)
+        
+        addChild(leftControl)
+        addChild(downControl)
+        addChild(upControl)
+        addChild(rightControl)
+
         run(SKAction.repeatForever(
               SKAction.sequence([
 //                SKAction.run(makeLeft),
