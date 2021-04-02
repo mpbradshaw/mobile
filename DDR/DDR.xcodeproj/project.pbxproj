@@ -29,6 +29,8 @@
 		C9EF671826150ECD0004CA7D /* HardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF671726150ECD0004CA7D /* HardVC.swift */; };
 		C9EF671D26150FF70004CA7D /* controller.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF671C26150FF70004CA7D /* controller.png */; };
 		C9EF672D2615130F0004CA7D /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF672C2615130F0004CA7D /* arrows.png */; };
+		C9EF6732261759F50004CA7D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF6731261759F50004CA7D /* GameScene.swift */; };
+		C9EF6737261761CA0004CA7D /* leftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C9EF6736261761C90004CA7D /* leftArrow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		C9EF671726150ECD0004CA7D /* HardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardVC.swift; sourceTree = "<group>"; };
 		C9EF671C26150FF70004CA7D /* controller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = controller.png; path = ../../../../Downloads/controller.png; sourceTree = "<group>"; };
 		C9EF672C2615130F0004CA7D /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrows.png; path = ../../../../Desktop/arrows.png; sourceTree = "<group>"; };
+		C9EF6731261759F50004CA7D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C9EF6736261761C90004CA7D /* leftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = leftArrow.png; path = ../../../../Downloads/leftArrow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,7 @@
 				C9EF66E7261218140004CA7D /* InstructionVC.swift */,
 				C9EF66E2261217640004CA7D /* TitleView.swift */,
 				C9EF66FE2614F2A90004CA7D /* EasyVC.swift */,
+				C9EF6731261759F50004CA7D /* GameScene.swift */,
 				C9EF66A92612153B0004CA7D /* ViewController.swift */,
 				C9EF66AB2612153B0004CA7D /* Main.storyboard */,
 				C9EF67082614F8BB0004CA7D /* MediumVC.swift */,
@@ -139,6 +144,7 @@
 				C9EF66F42614E9350004CA7D /* DifficultyVC.swift */,
 				C9EF67032614F70C0004CA7D /* absolute.mp3 */,
 				C9EF672C2615130F0004CA7D /* arrows.png */,
+				C9EF6736261761C90004CA7D /* leftArrow.png */,
 				C9EF670D2614F9470004CA7D /* stars.mp3 */,
 				C9EF671226150E980004CA7D /* legend.mp3 */,
 				C9EF66DD261215F60004CA7D /* 53294.png */,
@@ -275,6 +281,7 @@
 			files = (
 				C9EF66DE261215F60004CA7D /* 53294.png in Resources */,
 				C9EF671326150E990004CA7D /* legend.mp3 in Resources */,
+				C9EF6737261761CA0004CA7D /* leftArrow.png in Resources */,
 				C9EF66ED2612191A0004CA7D /* gamesample.jpeg in Resources */,
 				C9EF66B22612153F0004CA7D /* LaunchScreen.storyboard in Resources */,
 				C9EF66AF2612153F0004CA7D /* Assets.xcassets in Resources */,
@@ -308,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EF6732261759F50004CA7D /* GameScene.swift in Sources */,
 				C9EF66FF2614F2A90004CA7D /* EasyVC.swift in Sources */,
 				C9EF66AA2612153B0004CA7D /* ViewController.swift in Sources */,
 				C9EF671826150ECD0004CA7D /* HardVC.swift in Sources */,

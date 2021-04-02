@@ -217,7 +217,7 @@
         <scene sceneID="BjF-s4-Dqt">
             <objects>
                 <viewController id="d1i-yr-nq9" customClass="EasyVC" customModule="DDR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9ME-Iy-vOt">
+                    <view key="view" contentMode="scaleToFill" id="9ME-Iy-vOt" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
