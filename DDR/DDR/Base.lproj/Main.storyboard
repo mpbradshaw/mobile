@@ -165,49 +165,13 @@
         <scene sceneID="evk-WB-efn">
             <objects>
                 <viewController id="O8a-3a-oQp" customClass="MediumVC" customModule="DDR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SDU-Qt-hie">
+                    <view key="view" contentMode="scaleToFill" id="SDU-Qt-hie" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrows.png" translatesAutoresizingMaskIntoConstraints="NO" id="dCV-rA-9sO">
-                                <rect key="frame" x="8" y="-25" width="374" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ8-gf-Xr2">
-                                <rect key="frame" x="16" y="616" width="112" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcH-sJ-Bad">
-                                <rect key="frame" x="136" y="495" width="113" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqL-bm-9ar">
-                                <rect key="frame" x="136" y="616" width="113" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B0-Tx-Q7q">
-                                <rect key="frame" x="257" y="616" width="117" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="controller.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q3G-0n-7m8">
-                                <rect key="frame" x="0.0" y="481" width="390" height="275"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wQQ-qh-vsj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="q1v-cN-W1A"/>
-                    <connections>
-                        <outlet property="down" destination="bqL-bm-9ar" id="1Dl-Wb-3Qt"/>
-                        <outlet property="left" destination="PZ8-gf-Xr2" id="ok6-3L-Uur"/>
-                        <outlet property="right" destination="7B0-Tx-Q7q" id="w1m-Df-VMY"/>
-                        <outlet property="up" destination="PcH-sJ-Bad" id="gED-qo-Ivg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0T3-ca-34Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,46 +243,10 @@
                     <view key="view" contentMode="scaleToFill" id="1QS-b8-ytu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrows.png" translatesAutoresizingMaskIntoConstraints="NO" id="LgY-mg-Hjh">
-                                <rect key="frame" x="8" y="-26" width="374" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu8-Mh-e4D">
-                                <rect key="frame" x="16" y="616" width="112" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X49-Uf-xTG">
-                                <rect key="frame" x="136" y="495" width="113" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sg-oh-qLW">
-                                <rect key="frame" x="136" y="616" width="113" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kg-vh-PfS">
-                                <rect key="frame" x="257" y="616" width="117" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="controller.png" translatesAutoresizingMaskIntoConstraints="NO" id="bOl-UB-daM">
-                                <rect key="frame" x="0.0" y="481" width="390" height="275"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Gb9-ze-5BG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Sv-ap-zHk"/>
-                    <connections>
-                        <outlet property="down" destination="3sg-oh-qLW" id="YSU-dk-MT4"/>
-                        <outlet property="left" destination="Yu8-Mh-e4D" id="2nh-Hy-P8K"/>
-                        <outlet property="right" destination="2kg-vh-PfS" id="HRI-X2-pTg"/>
-                        <outlet property="up" destination="X49-Uf-xTG" id="HHi-qS-lWJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjg-Qa-mqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -327,8 +255,6 @@
     </scenes>
     <resources>
         <image name="53294.png" width="133" height="115.91999816894531"/>
-        <image name="arrows.png" width="258" height="74"/>
-        <image name="controller.png" width="278.25" height="187.5"/>
         <image name="difficulties.jpg" width="640" height="480"/>
         <image name="gamesample.jpeg" width="320" height="480"/>
         <systemColor name="systemBackgroundColor">
