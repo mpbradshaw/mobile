@@ -97,7 +97,7 @@ class GameScene: SKScene {
       
         let speed = CGFloat(2.5)
       
-        let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
+        let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
         leftArrow.run(SKAction.sequence([actionMove, actionMoveDone]))
     }
@@ -115,7 +115,7 @@ class GameScene: SKScene {
       
         let speed = CGFloat(4.0)
       
-        let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
+        let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
         rightArrow.run(SKAction.sequence([actionMove, actionMoveDone]))
     }
@@ -133,7 +133,7 @@ class GameScene: SKScene {
       
         let speed = CGFloat(4.0)
       
-        let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
+        let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
         upArrow.run(SKAction.sequence([actionMove, actionMoveDone]))
     }
@@ -151,7 +151,7 @@ class GameScene: SKScene {
       
         let speed = CGFloat(4.0)
       
-        let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)-40.0), duration: TimeInterval(speed))
+        let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
         downArrow.run(SKAction.sequence([actionMove, actionMoveDone]))
     }
