@@ -1,12 +1,8 @@
 import AVFoundation
+import SpriteKit
 import UIKit
 
 class HardVC: UIViewController {
-    
-    @IBOutlet var right: UIButton!
-    @IBOutlet var left: UIButton!
-    @IBOutlet var up: UIButton!
-    @IBOutlet var down: UIButton!
     
     var player: AVAudioPlayer?
     
@@ -34,6 +30,11 @@ class HardVC: UIViewController {
         catch {
             print("ERROR: Audio Player Issue")
         }
+        
+        let scene = HardGameScene(size: view.bounds.size)
+        let skView = view as! SKView
+        skView.presentScene(scene)
+        
     }
 
 }

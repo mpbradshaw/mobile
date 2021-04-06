@@ -240,7 +240,7 @@
         <scene sceneID="gbA-U6-X5L">
             <objects>
                 <viewController id="kZ9-df-wHt" customClass="HardVC" customModule="DDR" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1QS-b8-ytu">
+                    <view key="view" contentMode="scaleToFill" id="1QS-b8-ytu" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Gb9-ze-5BG"/>

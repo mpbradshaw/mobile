@@ -11,11 +11,6 @@ import UIKit
 
 class MediumVC: UIViewController {
     
-    @IBOutlet var right: UIButton!
-    @IBOutlet var left: UIButton!
-    @IBOutlet var up: UIButton!
-    @IBOutlet var down: UIButton!
-    
     var player: AVAudioPlayer?
     
     override func viewDidLoad() {
