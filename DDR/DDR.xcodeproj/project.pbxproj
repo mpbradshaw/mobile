@@ -35,6 +35,7 @@
 		C9EF6741261771E50004CA7D /* upArrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF6740261771E50004CA7D /* upArrow.jpg */; };
 		C9EF6746261772170004CA7D /* downArrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF6745261772170004CA7D /* downArrow.jpg */; };
 		C9EF674B261778AB0004CA7D /* upControl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF674A261778AB0004CA7D /* upControl.jpg */; };
+		C9EF6750261CD3A00004CA7D /* MediumGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF674F261CD39F0004CA7D /* MediumGameScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		C9EF6740261771E50004CA7D /* upArrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = upArrow.jpg; path = ../../../../Downloads/upArrow.jpg; sourceTree = "<group>"; };
 		C9EF6745261772170004CA7D /* downArrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = downArrow.jpg; path = ../../../../Downloads/downArrow.jpg; sourceTree = "<group>"; };
 		C9EF674A261778AB0004CA7D /* upControl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = upControl.jpg; path = ../../../../Downloads/upControl.jpg; sourceTree = "<group>"; };
+		C9EF674F261CD39F0004CA7D /* MediumGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumGameScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				C9EF66E2261217640004CA7D /* TitleView.swift */,
 				C9EF66FE2614F2A90004CA7D /* EasyVC.swift */,
 				C9EF6731261759F50004CA7D /* GameScene.swift */,
+				C9EF674F261CD39F0004CA7D /* MediumGameScene.swift */,
 				C9EF66A92612153B0004CA7D /* ViewController.swift */,
 				C9EF66AB2612153B0004CA7D /* Main.storyboard */,
 				C9EF67082614F8BB0004CA7D /* MediumVC.swift */,
@@ -337,6 +340,7 @@
 				C9EF671826150ECD0004CA7D /* HardVC.swift in Sources */,
 				C9EF66F52614E9350004CA7D /* DifficultyVC.swift in Sources */,
 				C9EF67092614F8BB0004CA7D /* MediumVC.swift in Sources */,
+				C9EF6750261CD3A00004CA7D /* MediumGameScene.swift in Sources */,
 				C9EF66A62612153B0004CA7D /* AppDelegate.swift in Sources */,
 				C9EF66E8261218140004CA7D /* InstructionVC.swift in Sources */,
 				C9EF66A82612153B0004CA7D /* SceneDelegate.swift in Sources */,

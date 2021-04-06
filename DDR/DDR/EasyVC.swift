@@ -10,11 +10,6 @@ import SpriteKit
 import UIKit
 
 class EasyVC: UIViewController {
-    
-    @IBOutlet var right: UIButton!
-    @IBOutlet var left: UIButton!
-    @IBOutlet var up: UIButton!
-    @IBOutlet var down: UIButton!
 
     var player: AVAudioPlayer?
     

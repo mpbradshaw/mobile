@@ -6,6 +6,7 @@
 //
 
 import AVFoundation
+import SpriteKit
 import UIKit
 
 class MediumVC: UIViewController {
@@ -41,6 +42,10 @@ class MediumVC: UIViewController {
         catch {
             print("ERROR: Audio Player Issue")
         }
+        
+        let scene = MediumGameScene(size: view.bounds.size)
+        let skView = view as! SKView
+        skView.presentScene(scene)
     }
 
 }
