@@ -62,24 +62,24 @@ class GameScene: SKScene {
         addChild(upControl)
         addChild(rightControl)
         
-        run(SKAction.repeatForever(SKAction.sequence([SKAction.wait(forDuration:3.0), SKAction.run(makeLeft)])))
+//        run(SKAction.repeatForever(SKAction.sequence([SKAction.wait(forDuration:3.0), SKAction.run(makeLeft)])))
 
-//        run(SKAction.repeat(SKAction.sequence([
-//                                                SKAction.wait(forDuration: 2.5), SKAction.run({
-//                                                    let arrow = Int.random(in:0...3)
-//                                                    if (arrow == 0) {
-//                                                        self.makeLeft()
-//                                                    } else if (arrow == 1) {
-//                                                        self.makeDown()
-//                                                    } else if (arrow == 2) {
-//                                                        self.makeUp()
-//                                                    } else if (arrow == 3) {
-//                                                        self.makeRight()
-//                                                    } else {
-//
-//                                                    }
-//                                                })]), count: 48)
-//                              )
+        run(SKAction.repeat(SKAction.sequence([
+                                                SKAction.wait(forDuration: 2.5), SKAction.run({
+                                                    let arrow = Int.random(in:0...3)
+                                                    if (arrow == 0) {
+                                                        self.makeLeft()
+                                                    } else if (arrow == 1) {
+                                                        self.makeDown()
+                                                    } else if (arrow == 2) {
+                                                        self.makeUp()
+                                                    } else if (arrow == 3) {
+                                                        self.makeRight()
+                                                    } else {
+
+                                                    }
+                                                })]), count: 48)
+                              )
         
     }
     
@@ -109,7 +109,7 @@ class GameScene: SKScene {
         rightArrow.setScale(0.6)
         let xVal = 340.0
 
-        rightArrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
+        rightArrow.position = CGPoint(x: xVal, y: 0.0)
       
         addChild(rightArrow)
       
@@ -127,7 +127,7 @@ class GameScene: SKScene {
         upArrow.setScale(0.1)
         let xVal = 246.0
 
-        upArrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
+        upArrow.position = CGPoint(x: xVal, y: 0.0)
       
         addChild(upArrow)
       
@@ -145,7 +145,7 @@ class GameScene: SKScene {
         downArrow.setScale(0.1)
         let xVal = 150.0
 
-        downArrow.position = CGPoint(x: xVal, y: -Double(size.height)+20.0)
+        downArrow.position = CGPoint(x: xVal, y: 0.0)
       
         addChild(downArrow)
       
