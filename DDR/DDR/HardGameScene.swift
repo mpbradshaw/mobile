@@ -8,6 +8,7 @@
 import SpriteKit
  
 var hardScore: Float!
+var hardHighScore: Float!
 class HardGameScene: SKScene {
     var topRack: SKSpriteNode!
     var leftControl: SKSpriteNode!
