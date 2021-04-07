@@ -15,15 +15,18 @@ class HardLeaderboardVC: UIViewController {
         super.viewDidLoad()
         
         var highScoreDefault = UserDefaults.standard
+        
+        // if there is already a high score, use it at first
         if(highScoreDefault.value(forKey: "hardHighScore") != nil) {
             hardHighScore = highScoreDefault.value(forKey: "hardHighScore") as? Float
         }
-        else {
+        else {  // if there isn't, use the current score
             hardHighScore = hardScore
             var highScoreDefault = UserDefaults.standard
             highScoreDefault.setValue(hardHighScore, forKey: "hardHighScore")
             highScoreDefault.synchronize()        }
         
+        // check if we should be using the default (previous) high score, or this new score
         if(hardScore > hardHighScore) {
             hardHighScore = hardScore
             var highScoreDefault = UserDefaults.standard

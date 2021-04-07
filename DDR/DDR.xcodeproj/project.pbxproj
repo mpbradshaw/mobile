@@ -37,6 +37,9 @@
 		C9EF6750261CD3A00004CA7D /* MediumGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF674F261CD39F0004CA7D /* MediumGameScene.swift */; };
 		C9EF6758261CD9820004CA7D /* HardGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF6757261CD9820004CA7D /* HardGameScene.swift */; };
 		C9EF6760261DFC6D0004CA7D /* HardLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF675F261DFC6C0004CA7D /* HardLeaderboardVC.swift */; };
+		C9EF6765261E0C3F0004CA7D /* leaderboardBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF6764261E0C3E0004CA7D /* leaderboardBG.jpg */; };
+		C9EF676A261E0E3B0004CA7D /* titleBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF6769261E0E3A0004CA7D /* titleBG.jpg */; };
+		C9EF676F261E0EB70004CA7D /* instructionsBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF676E261E0EB70004CA7D /* instructionsBG.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		C9EF674F261CD39F0004CA7D /* MediumGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumGameScene.swift; sourceTree = "<group>"; };
 		C9EF6757261CD9820004CA7D /* HardGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardGameScene.swift; sourceTree = "<group>"; };
 		C9EF675F261DFC6C0004CA7D /* HardLeaderboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardLeaderboardVC.swift; sourceTree = "<group>"; };
+		C9EF6764261E0C3E0004CA7D /* leaderboardBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leaderboardBG.jpg; sourceTree = "<group>"; };
+		C9EF6769261E0E3A0004CA7D /* titleBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = titleBG.jpg; sourceTree = "<group>"; };
+		C9EF676E261E0EB70004CA7D /* instructionsBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = instructionsBG.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +164,11 @@
 				C9EF675F261DFC6C0004CA7D /* HardLeaderboardVC.swift */,
 				C9EF66F42614E9350004CA7D /* DifficultyVC.swift */,
 				C9EF67032614F70C0004CA7D /* absolute.mp3 */,
+				C9EF6764261E0C3E0004CA7D /* leaderboardBG.jpg */,
 				C9EF672C2615130F0004CA7D /* arrows.png */,
 				C9EF673B2617719B0004CA7D /* rightArrow.jpg */,
+				C9EF6769261E0E3A0004CA7D /* titleBG.jpg */,
+				C9EF676E261E0EB70004CA7D /* instructionsBG.jpg */,
 				C9EF674A261778AB0004CA7D /* upControl.jpg */,
 				C9EF6736261761C90004CA7D /* leftArrow.png */,
 				C9EF6745261772170004CA7D /* downArrow.jpg */,
@@ -301,6 +310,8 @@
 				C9EF671326150E990004CA7D /* legend.mp3 in Resources */,
 				C9EF674B261778AB0004CA7D /* upControl.jpg in Resources */,
 				C9EF6737261761CA0004CA7D /* leftArrow.png in Resources */,
+				C9EF676A261E0E3B0004CA7D /* titleBG.jpg in Resources */,
+				C9EF676F261E0EB70004CA7D /* instructionsBG.jpg in Resources */,
 				C9EF6746261772170004CA7D /* downArrow.jpg in Resources */,
 				C9EF66ED2612191A0004CA7D /* gamesample.jpeg in Resources */,
 				C9EF66B22612153F0004CA7D /* LaunchScreen.storyboard in Resources */,
@@ -311,6 +322,7 @@
 				C9EF66FA2614EA200004CA7D /* difficulties.jpg in Resources */,
 				C9EF66AD2612153B0004CA7D /* Main.storyboard in Resources */,
 				C9EF6741261771E50004CA7D /* upArrow.jpg in Resources */,
+				C9EF6765261E0C3F0004CA7D /* leaderboardBG.jpg in Resources */,
 				C9EF672D2615130F0004CA7D /* arrows.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
