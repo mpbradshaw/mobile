@@ -42,6 +42,11 @@ class EasyVC: UIViewController {
         let skView = view as! SKView
         skView.presentScene(scene)
         
+        let delayTime = DispatchTime.now() + 3.0
+        DispatchQueue.main.asyncAfter(deadline: delayTime, execute: {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "EasyLeaderboardVC") as! EasyLeaderboardVC
+                self.present(vc, animated: true, completion: nil)
+        })
     }
     
 }

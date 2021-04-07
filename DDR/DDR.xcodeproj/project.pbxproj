@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C9CABCAA261E111800F01317 /* ty.png in Resources */ = {isa = PBXBuildFile; fileRef = C9CABCA9261E111800F01317 /* ty.png */; };
 		C9CABCB2261E122A00F01317 /* MediumLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CABCB1261E122A00F01317 /* MediumLeaderboardVC.swift */; };
+		C9CABCB7261E152500F01317 /* EasyLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CABCB6261E152500F01317 /* EasyLeaderboardVC.swift */; };
 		C9EF66A62612153B0004CA7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66A52612153B0004CA7D /* AppDelegate.swift */; };
 		C9EF66A82612153B0004CA7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66A72612153B0004CA7D /* SceneDelegate.swift */; };
 		C9EF66AA2612153B0004CA7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF66A92612153B0004CA7D /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		C9CABCA9261E111800F01317 /* ty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ty.png; sourceTree = "<group>"; };
 		C9CABCB1261E122A00F01317 /* MediumLeaderboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumLeaderboardVC.swift; sourceTree = "<group>"; };
+		C9CABCB6261E152500F01317 /* EasyLeaderboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyLeaderboardVC.swift; sourceTree = "<group>"; };
 		C9EF66A22612153B0004CA7D /* DDR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EF66A52612153B0004CA7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9EF66A72612153B0004CA7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				C9EF674F261CD39F0004CA7D /* MediumGameScene.swift */,
 				C9EF66A92612153B0004CA7D /* ViewController.swift */,
 				C9EF66AB2612153B0004CA7D /* Main.storyboard */,
+				C9CABCB6261E152500F01317 /* EasyLeaderboardVC.swift */,
 				C9EF67082614F8BB0004CA7D /* MediumVC.swift */,
 				C9EF671726150ECD0004CA7D /* HardVC.swift */,
 				C9EF6757261CD9820004CA7D /* HardGameScene.swift */,
@@ -357,6 +360,7 @@
 			files = (
 				C9EF6732261759F50004CA7D /* GameScene.swift in Sources */,
 				C9EF66FF2614F2A90004CA7D /* EasyVC.swift in Sources */,
+				C9CABCB7261E152500F01317 /* EasyLeaderboardVC.swift in Sources */,
 				C9EF66AA2612153B0004CA7D /* ViewController.swift in Sources */,
 				C9EF6760261DFC6D0004CA7D /* HardLeaderboardVC.swift in Sources */,
 				C9EF671826150ECD0004CA7D /* HardVC.swift in Sources */,

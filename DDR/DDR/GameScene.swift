@@ -7,6 +7,9 @@
 
 import SpriteKit
  
+var easyScore: Float!
+var easyHighScore: Float!
+
 class GameScene: SKScene {
     var topRack: SKSpriteNode!
     var leftControl: SKSpriteNode!
@@ -17,7 +20,7 @@ class GameScene: SKScene {
     var rightArrow: SKSpriteNode!
     var upArrow: SKSpriteNode!
     var downArrow: SKSpriteNode!
-    var score: Float!
+//    var easyScore: Float!
     var leftGen: Bool!
     var leftClick: Bool!
     var downGen: Bool!
@@ -30,7 +33,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.white
         
-        score = 0.0
+        easyScore = 0.0
         
         topRack = SKSpriteNode(imageNamed: "arrows")
         topRack.setScale(0.73)
@@ -169,15 +172,15 @@ class GameScene: SKScene {
                         coords = leftArrow.position
                         print(coords)
                     }
-                    if(coords.y > 0 && score != nil && leftClick == false && leftGen == true) {
+                    if(coords.y > 0 && easyScore != nil && leftClick == false && leftGen == true) {
                         leftClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
-                        let arrowScore = Float((100 - timing/2.0))
-                        if(arrowScore > 0) {
-                            score = score + Float((100 - timing/2.0))
+                        let arroweasyScore = Float((100 - timing/2.0))
+                        if(arroweasyScore > 0) {
+                            easyScore = easyScore + Float((100 - timing/2.0))
                         }
                         leftGen = false
-                        print(score!)
+                        print(easyScore!)
                     }
                 }
                 catch { }
@@ -190,15 +193,15 @@ class GameScene: SKScene {
                         coords = rightArrow.position
                         print(coords)
                     }
-                    if(coords.y > 0 && score != nil && rightClick == false && rightGen == true) {
+                    if(coords.y > 0 && easyScore != nil && rightClick == false && rightGen == true) {
                         rightClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
-                        let arrowScore = Float((100 - timing/2.0))
-                        if(arrowScore > 0) {
-                            score = score + Float((100 - timing/2.0))
+                        let arroweasyScore = Float((100 - timing/2.0))
+                        if(arroweasyScore > 0) {
+                            easyScore = easyScore + Float((100 - timing/2.0))
                         }
                         rightGen = false
-                        print(score!)
+                        print(easyScore!)
                     }
                 }
                 catch { }
@@ -211,15 +214,15 @@ class GameScene: SKScene {
                         coords = upArrow.position
                         print(coords)
                     }
-                    if(coords.y > 0 && score != nil && upClick == false && upGen == true) {
+                    if(coords.y > 0 && easyScore != nil && upClick == false && upGen == true) {
                         upClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
-                        let arrowScore = Float((100 - timing/2.0))
-                        if(arrowScore > 0) {
-                            score = score + Float((100 - timing/2.0))
+                        let arroweasyScore = Float((100 - timing/2.0))
+                        if(arroweasyScore > 0) {
+                            easyScore = easyScore + Float((100 - timing/2.0))
                         }
                         upGen = false
-                        print(score!)
+                        print(easyScore!)
                     }
                 }
                 catch { }
@@ -232,15 +235,15 @@ class GameScene: SKScene {
                         coords = downArrow.position
                         print(coords)
                     }
-                    if(coords.y > 0 && score != nil && downClick == false && downGen == true) {
+                    if(coords.y > 0 && easyScore != nil && downClick == false && downGen == true) {
                         downClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
-                        let arrowScore = Float((100 - timing/2.0))
-                        if(arrowScore > 0) {
-                            score = score + Float((100 - timing/2.0))
+                        let arroweasyScore = Float((100 - timing/2.0))
+                        if(arroweasyScore > 0) {
+                            easyScore = easyScore + Float((100 - timing/2.0))
                         }
                         downGen = false
-                        print(score!)
+                        print(easyScore!)
                     }
                 }
                 catch { }
