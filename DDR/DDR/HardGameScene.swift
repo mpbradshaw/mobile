@@ -78,7 +78,7 @@ class HardGameScene: SKScene {
                                                     } else {
 
                                                     }
-                                                })]), count: 48)
+                                                })]), count: 100)
                               )
         
     }

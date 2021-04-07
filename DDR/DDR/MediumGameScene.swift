@@ -78,7 +78,7 @@ class MediumGameScene: SKScene {
                                                     } else {
 
                                                     }
-                                                })]), count: 48)
+                                                })]), count: 100)
                               )
         
     }
