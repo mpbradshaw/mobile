@@ -7,6 +7,7 @@
 
 import SpriteKit
  
+var score: Float!
 class HardGameScene: SKScene {
     var topRack: SKSpriteNode!
     var leftControl: SKSpriteNode!
@@ -17,7 +18,7 @@ class HardGameScene: SKScene {
     var rightArrow: SKSpriteNode!
     var upArrow: SKSpriteNode!
     var downArrow: SKSpriteNode!
-    var score: Float!
+//    var score: Float!
     var leftGen: Bool!
     var leftClick: Bool!
     var downGen: Bool!

@@ -36,6 +36,7 @@
 		C9EF674B261778AB0004CA7D /* upControl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9EF674A261778AB0004CA7D /* upControl.jpg */; };
 		C9EF6750261CD3A00004CA7D /* MediumGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF674F261CD39F0004CA7D /* MediumGameScene.swift */; };
 		C9EF6758261CD9820004CA7D /* HardGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF6757261CD9820004CA7D /* HardGameScene.swift */; };
+		C9EF6760261DFC6D0004CA7D /* HardLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EF675F261DFC6C0004CA7D /* HardLeaderboardVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		C9EF674A261778AB0004CA7D /* upControl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = upControl.jpg; sourceTree = "<group>"; };
 		C9EF674F261CD39F0004CA7D /* MediumGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumGameScene.swift; sourceTree = "<group>"; };
 		C9EF6757261CD9820004CA7D /* HardGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardGameScene.swift; sourceTree = "<group>"; };
+		C9EF675F261DFC6C0004CA7D /* HardLeaderboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardLeaderboardVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				C9EF67082614F8BB0004CA7D /* MediumVC.swift */,
 				C9EF671726150ECD0004CA7D /* HardVC.swift */,
 				C9EF6757261CD9820004CA7D /* HardGameScene.swift */,
+				C9EF675F261DFC6C0004CA7D /* HardLeaderboardVC.swift */,
 				C9EF66F42614E9350004CA7D /* DifficultyVC.swift */,
 				C9EF67032614F70C0004CA7D /* absolute.mp3 */,
 				C9EF672C2615130F0004CA7D /* arrows.png */,
@@ -336,6 +339,7 @@
 				C9EF6732261759F50004CA7D /* GameScene.swift in Sources */,
 				C9EF66FF2614F2A90004CA7D /* EasyVC.swift in Sources */,
 				C9EF66AA2612153B0004CA7D /* ViewController.swift in Sources */,
+				C9EF6760261DFC6D0004CA7D /* HardLeaderboardVC.swift in Sources */,
 				C9EF671826150ECD0004CA7D /* HardVC.swift in Sources */,
 				C9EF66F52614E9350004CA7D /* DifficultyVC.swift in Sources */,
 				C9EF6758261CD9820004CA7D /* HardGameScene.swift in Sources */,
