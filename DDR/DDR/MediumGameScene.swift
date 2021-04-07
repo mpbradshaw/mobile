@@ -6,6 +6,9 @@
 //
 
 import SpriteKit
+
+var medScore: Float!
+var medHighScore: Float!
  
 class MediumGameScene: SKScene {
     var topRack: SKSpriteNode!
@@ -17,7 +20,7 @@ class MediumGameScene: SKScene {
     var rightArrow: SKSpriteNode!
     var upArrow: SKSpriteNode!
     var downArrow: SKSpriteNode!
-    var score: Float!
+//    var medScore: Float!
     var leftGen: Bool!
     var leftClick: Bool!
     var downGen: Bool!
@@ -30,7 +33,7 @@ class MediumGameScene: SKScene {
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.white
         
-        score = 0.0
+        medScore = 0.0
         
         topRack = SKSpriteNode(imageNamed: "arrows")
         topRack.setScale(0.73)
@@ -169,15 +172,15 @@ class MediumGameScene: SKScene {
                         coords = leftArrow.position
                         print(coords)
                     }
-                    if(coords.y > 0 && score != nil && leftClick == false && leftGen == true) {
+                    if(coords.y > 0 && medScore != nil && leftClick == false && leftGen == true) {
                         leftClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
-                        let arrowScore = Float((100 - timing/2.0))
-                        if(arrowScore > 0) {
-                            score = score + Float((100 - timing/2.0))
+                        let arrowmedScore = Float((100 - timing/2.0))
+                        if(arrowmedScore > 0) {
+                            medScore = medScore + Float((100 - timing/2.0))
                         }
                         leftGen = false
-                        print(score!)
+                        print(medScore!)
                     }
                 }
                 catch { }
@@ -190,15 +193,15 @@ class MediumGameScene: SKScene {
                         coords = rightArrow.position
                         print(coords)
                     }
-                    if(coords.y > 0 && score != nil && rightClick == false && rightGen == true) {
+                    if(coords.y > 0 && medScore != nil && rightClick == false && rightGen == true) {
                         rightClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
-                        let arrowScore = Float((100 - timing/2.0))
-                        if(arrowScore > 0) {
-                            score = score + Float((100 - timing/2.0))
+                        let arrowmedScore = Float((100 - timing/2.0))
+                        if(arrowmedScore > 0) {
+                            medScore = medScore + Float((100 - timing/2.0))
                         }
                         rightGen = false
-                        print(score!)
+                        print(medScore!)
                     }
                 }
                 catch { }
@@ -211,15 +214,15 @@ class MediumGameScene: SKScene {
                         coords = upArrow.position
                         print(coords)
                     }
-                    if(coords.y > 0 && score != nil && upClick == false && upGen == true) {
+                    if(coords.y > 0 && medScore != nil && upClick == false && upGen == true) {
                         upClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
-                        let arrowScore = Float((100 - timing/2.0))
-                        if(arrowScore > 0) {
-                            score = score + Float((100 - timing/2.0))
+                        let arrowmedScore = Float((100 - timing/2.0))
+                        if(arrowmedScore > 0) {
+                            medScore = medScore + Float((100 - timing/2.0))
                         }
                         upGen = false
-                        print(score!)
+                        print(medScore!)
                     }
                 }
                 catch { }
@@ -232,15 +235,15 @@ class MediumGameScene: SKScene {
                         coords = downArrow.position
                         print(coords)
                     }
-                    if(coords.y > 0 && score != nil && downClick == false && downGen == true) {
+                    if(coords.y > 0 && medScore != nil && downClick == false && downGen == true) {
                         downClick = true    // makes it so you can only click once per left arrow
                         let timing = abs(coords.y - 804.0)
-                        let arrowScore = Float((100 - timing/2.0))
-                        if(arrowScore > 0) {
-                            score = score + Float((100 - timing/2.0))
+                        let arrowmedScore = Float((100 - timing/2.0))
+                        if(arrowmedScore > 0) {
+                            medScore = medScore + Float((100 - timing/2.0))
                         }
                         downGen = false
-                        print(score!)
+                        print(medScore!)
                     }
                 }
                 catch { }
