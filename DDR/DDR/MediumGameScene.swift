@@ -68,7 +68,7 @@ class MediumGameScene: SKScene {
 //        run(SKAction.repeatForever(SKAction.sequence([SKAction.wait(forDuration:3.0), SKAction.run(makeLeft)])))
 
         run(SKAction.repeat(SKAction.sequence([
-                                                SKAction.wait(forDuration: 1.2), SKAction.run({
+                                                SKAction.wait(forDuration: 0.8), SKAction.run({
                                                     let arrow = Int.random(in:0...3)
                                                     if (arrow == 0) {
                                                         self.makeLeft()
@@ -98,7 +98,7 @@ class MediumGameScene: SKScene {
       
         addChild(leftArrow)
       
-        let speed = CGFloat(0.8)
+        let speed = CGFloat(0.6)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
@@ -116,7 +116,7 @@ class MediumGameScene: SKScene {
       
         addChild(rightArrow)
       
-        let speed = CGFloat(0.8)
+        let speed = CGFloat(0.6)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
@@ -134,7 +134,7 @@ class MediumGameScene: SKScene {
       
         addChild(upArrow)
       
-        let speed = CGFloat(0.8)
+        let speed = CGFloat(0.6)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
@@ -152,7 +152,7 @@ class MediumGameScene: SKScene {
       
         addChild(downArrow)
       
-        let speed = CGFloat(0.8)
+        let speed = CGFloat(0.6)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()

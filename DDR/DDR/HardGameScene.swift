@@ -67,7 +67,7 @@ class HardGameScene: SKScene {
 //        run(SKAction.repeatForever(SKAction.sequence([SKAction.wait(forDuration:3.0), SKAction.run(makeLeft)])))
 
         run(SKAction.repeat(SKAction.sequence([
-                                                SKAction.wait(forDuration: 1.0), SKAction.run({
+                                                SKAction.wait(forDuration: 0.77), SKAction.run({
                                                     let arrow = Int.random(in:0...3)
                                                     if (arrow == 0) {
                                                         self.makeLeft()
@@ -80,7 +80,7 @@ class HardGameScene: SKScene {
                                                     } else {
 
                                                     }
-                                                })]), count: 100)
+                                                })]), count: 116)
                               )
         
     }
@@ -97,7 +97,7 @@ class HardGameScene: SKScene {
       
         addChild(leftArrow)
         
-        let speed = Float.random(in: 0.6...0.85)
+        let speed = Float.random(in: 0.45...0.7)
       
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
@@ -115,7 +115,7 @@ class HardGameScene: SKScene {
       
         addChild(rightArrow)
       
-        let speed = Float.random(in: 0.6...0.85)
+        let speed = Float.random(in: 0.45...0.7)
 
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
@@ -133,7 +133,7 @@ class HardGameScene: SKScene {
       
         addChild(upArrow)
       
-        let speed = Float.random(in: 0.6...0.85)
+        let speed = Float.random(in: 0.45...0.7)
 
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()
@@ -151,7 +151,7 @@ class HardGameScene: SKScene {
       
         addChild(downArrow)
       
-        let speed = Float.random(in: 0.6...0.85)
+        let speed = Float.random(in: 0.45...0.7)
 
         let actionMove = SKAction.move(to: CGPoint(x: xVal, y: Double(size.height)), duration: TimeInterval(speed))
         let actionMoveDone = SKAction.removeFromParent()

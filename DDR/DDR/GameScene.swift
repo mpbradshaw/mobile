@@ -81,7 +81,7 @@ class GameScene: SKScene {
                                                     } else {
 
                                                     }
-                                                })]), count: 54)
+                                                })]), count: 52)
                               )
         
     }
